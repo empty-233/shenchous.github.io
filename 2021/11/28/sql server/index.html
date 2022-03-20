@@ -1,0 +1,736 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="空无的博客" href="https://blog.kongwu.top/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="空无的博客" href="https://blog.kongwu.top/atom.xml" />
+<link rel="alternate" type="application/json" title="空无的博客" href="https://blog.kongwu.top/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="教程,sql server,笔记" />
+
+
+<link rel="canonical" href="https://blog.kongwu.top/2021/11/28/sql%20server/">
+
+
+
+  <title>
+sql server教程 - 教程 |
+空无的博客 = 空无的博客 = 空空的，什么都没有</title>
+<meta name="generator" content="Hexo 6.1.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">sql server教程
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2021-11-28 11:11:11">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-11-28T11:11:11+08:00">2021-11-28</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">空无的博客</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="item" rel="index" title="分类于 教程"><span itemprop="name">教程</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://blog.kongwu.top/2021/11/28/sql%20server/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.webp">
+    <meta itemprop="name" content="空无">
+    <meta itemprop="description" content="空空的，什么都没有, 一个连搜索引擎都没有收录博客">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="空无的博客">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h1><h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> database 数据库名</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> 表名(</span><br><span class="line">	表名 数值类型</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h1><ul>
+<li>组件：<ul>
+<li>primary key –唯一</li>
+<li>identity –自动生成编号</li>
+</ul>
+</li>
+</ul>
+<p>primary key identity()     –自动生成编号</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> 表名(列名) <span class="keyword">values</span>(内容)</span><br></pre></td></tr></table></figure>
+
+<h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> 表名 <span class="keyword">set</span> 列名 <span class="operator">=</span> 修改内容</span><br></pre></td></tr></table></figure>
+
+<h2 id="添加约束"><a href="#添加约束" class="headerlink" title="添加约束"></a>添加约束</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">add</span> <span class="keyword">constraint</span> 列名 约束</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h1><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> 条件</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> 表名</span><br><span class="line"><span class="keyword">select</span> (自定义查询的列) <span class="keyword">from</span> 表名</span><br></pre></td></tr></table></figure>
+
+<h2 id="条件"><a href="#条件" class="headerlink" title="条件"></a>条件</h2><blockquote>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">=</span>：等于，比较是否相等及赋值</span><br><span class="line"><span class="operator">!=</span>：比较不等于</span><br><span class="line"><span class="operator">&gt;</span>：比较大于</span><br><span class="line"><span class="operator">&lt;</span>：比较小于</span><br><span class="line"><span class="operator">&gt;=</span>：比较大于等于</span><br><span class="line"><span class="operator">&lt;=</span>：比较小于等于</span><br><span class="line"><span class="keyword">IS</span> <span class="keyword">NULL</span>：比较为空</span><br><span class="line"><span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>：比较不为空</span><br><span class="line"><span class="keyword">in</span>：比较是否在其中</span><br><span class="line"><span class="keyword">like</span>：模糊查询</span><br><span class="line">BETWEEN...AND...：比较是否在两者之间</span><br><span class="line"><span class="keyword">and</span>：逻辑与（两个条件同时成立表达式成立）</span><br><span class="line"><span class="keyword">or</span>：逻辑或（两个条件有一个成立表达式成立） </span><br><span class="line"><span class="keyword">not</span>：逻辑非（条件成立，表达式则不成立；条件不成立，表达式则成立）</span><br></pre></td></tr></table></figure>
+</blockquote>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> (条件)</span><br></pre></td></tr></table></figure>
+
+<h2 id="添加列表"><a href="#添加列表" class="headerlink" title="添加列表"></a>添加列表</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="string">&#x27;xxx&#x27;</span> xxx <span class="operator">*</span> <span class="keyword">from</span> 表名</span><br></pre></td></tr></table></figure>
+
+<h2 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxx <span class="keyword">union</span> xxx <span class="operator">/</span><span class="operator">/</span>合并结果</span><br></pre></td></tr></table></figure>
+
+<p>group by分组</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> ,(函数名) (列名) <span class="keyword">from</span> 表名 grounp <span class="keyword">by</span> (分组的列表)</span><br></pre></td></tr></table></figure>
+
+<p>group by分组 + 条件</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> ,(函数名) (列名) <span class="keyword">from</span> 表名 <span class="keyword">where</span> (条件) grounp <span class="keyword">by</span> (分组的列表)</span><br></pre></td></tr></table></figure>
+
+<p>having (聚合函数)</p>
+<h2 id="多表查询"><a href="#多表查询" class="headerlink" title="多表查询"></a>多表查询</h2><p><em><strong>简单多表查询和内连接共同的特点：不符合主外键的数据不会被显示出来</strong></em></p>
+<p><strong>自定义查询的列名，如果两表列名相同，需要指定显示哪个表名，例如：xx1.xx</strong></p>
+<h3 id="简单多表查询"><a href="#简单多表查询" class="headerlink" title="简单多表查询"></a>简单多表查询</h3><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> xx1,xx2,xx3 <span class="keyword">where</span> xx1.xx<span class="operator">=</span>xx2.xx <span class="keyword">and</span> xx1.x2<span class="operator">=</span>xx3.x2</span><br></pre></td></tr></table></figure>
+
+<h3 id="内连接"><a href="#内连接" class="headerlink" title="内连接"></a>内连接</h3><p><em><strong>不会示没有的数据</strong></em></p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> xx1 <span class="keyword">inner</span> <span class="keyword">join</span> xx2 <span class="keyword">on</span> xx2.xx<span class="operator">=</span>xx1.xx</span><br><span class="line"><span class="keyword">inner</span> <span class="keyword">join</span> xx2 <span class="keyword">on</span> xx3.x2<span class="operator">=</span>xx1.x2</span><br></pre></td></tr></table></figure>
+
+<h3 id="外连接"><a href="#外连接" class="headerlink" title="外连接"></a>外连接</h3><h4 id="左外连"><a href="#左外连" class="headerlink" title="左外连"></a>左外连</h4><p>左外连：已左表为主表进行数据显示，主外键关系找不到的数据用null取代</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> xx1 <span class="keyword">left</span> <span class="keyword">join</span> xx1 <span class="keyword">on</span> xx2.xx<span class="operator">=</span>xx1.xx</span><br></pre></td></tr></table></figure>
+
+<h4 id="右外连"><a href="#右外连" class="headerlink" title="右外连"></a>右外连</h4><p>和左外连相反</p>
+<p>右外连：已右表为主表进行数据显示，主外键关系找不到的数据用null取代</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> xx1 <span class="keyword">right</span> <span class="keyword">join</span> xx1 <span class="keyword">on</span> xx1.xx<span class="operator">=</span>xx2.xx</span><br></pre></td></tr></table></figure>
+
+<h4 id="全外连"><a href="#全外连" class="headerlink" title="全外连"></a>全外连</h4><p>全外连：两张表的数据，无论是否符合关系，都要显示</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> xx1 <span class="keyword">inner</span> <span class="keyword">full</span> <span class="keyword">on</span> xx1.xx<span class="operator">=</span>xx2.xx</span><br></pre></td></tr></table></figure>
+
+<h4 id="自连接"><a href="#自连接" class="headerlink" title="自连接"></a>自连接</h4><p>查询自己</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> A.xx xxx B.xx xxx <span class="keyword">from</span> 表<span class="number">1</span> A <span class="keyword">inner</span> <span class="keyword">join</span> 表<span class="number">2</span> A <span class="keyword">on</span> A.xx<span class="operator">=</span>B.xx</span><br></pre></td></tr></table></figure>
+
+<h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><p>可以在括号里嵌套查询，作为条件</p>
+<p>临时表：</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(查询) 临时表名</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><h2 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">declare</span> <span class="variable">@xxx</span> 类型</span><br></pre></td></tr></table></figure>
+
+<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2><p>一般使用set</p>
+<blockquote>
+<p>一般数值用set</p>
+<p>赋值表里的数据用select</p>
+</blockquote>
+<ul>
+<li>set：赋值变量指定的值</li>
+<li>select：一般用于表中查询出的数据赋值给变量，如果查询结果有多条，取最后一条赋值</li>
+</ul>
+<blockquote>
+<p>示例：</p>
+<blockquote>
+<p>select @ a &#x3D; 字段名 from 表名</p>
+<p>当前表最后一行的某个字段值给@a</p>
+</blockquote>
+</blockquote>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> <span class="variable">@xxx</span> <span class="operator">=</span> x</span><br></pre></td></tr></table></figure>
+
+<h2 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h2><blockquote>
+<p>@@ERROR：返回执行的上一个语句的错误号<br>@@IDENTITY：返回最后插入的标识值<br>@@MAX_CONNECTIONS：返回允许同时进行的最大用户连接数<br>@@ROWCOUNT：返回受上一语句影响的行数<br>@@SERVERNAME：返回运行 SQL Server的本地服务器的名称<br>@@SERVICENAME：返回SQL Server 正在其下运行的注册表<br>@@TRANCOUNT：返回当前连接的活动事务数<br>@@LOCK_TIMEOUT：返回当前会话的当前锁定超时设置（毫秒）</p>
+</blockquote>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> ,(函数名) (列名) <span class="keyword">from</span> 表名</span><br></pre></td></tr></table></figure>
+
+<h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">count:求数量</span><br><span class="line">max:求最大值</span><br><span class="line">min:求最小值</span><br><span class="line">sum:求和</span><br><span class="line">avg:求平均值</span><br></pre></td></tr></table></figure>
+
+<h1 id="go语句"><a href="#go语句" class="headerlink" title="go语句"></a>go语句</h1><p><strong>因为sql server是异步执行（大概）所以需要等待执行完才执行下一步</strong></p>
+<blockquote>
+<ol>
+<li><p>等待go语句之前代码执行完之后才执行后面的代码</p>
+<blockquote>
+<p>比如说创建完一个表之后立刻切换会报错，需要加go等待创建完成</p>
+</blockquote>
+</li>
+<li><p>批处理结束的一个标准</p>
+<blockquote>
+<p>变量作用域在go之间</p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><blockquote>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">算数运算符：加（<span class="operator">+</span>）、减（<span class="operator">-</span>）、乘（<span class="operator">*</span>）、除（<span class="operator">/</span>）、模（<span class="operator">%</span>） </span><br><span class="line">逻辑运算符：<span class="keyword">AND</span>、<span class="keyword">OR</span>、<span class="keyword">LIKE</span>、<span class="keyword">BETWEEN</span>、<span class="keyword">IN</span>、<span class="keyword">EXISTS</span>、<span class="keyword">NOT</span>、<span class="keyword">ALL</span>、<span class="keyword">ANY</span>、 </span><br><span class="line">赋值运算符：<span class="operator">=</span> </span><br><span class="line">字符串运算符：<span class="operator">+</span> </span><br><span class="line">比较运算符：<span class="operator">=</span>、<span class="operator">&gt;</span>、<span class="operator">&lt;</span>、<span class="operator">&gt;=</span>、<span class="operator">&lt;=</span>、<span class="operator">&lt;&gt;</span> </span><br><span class="line">位运算符：<span class="operator">|</span>、<span class="operator">&amp;</span>、<span class="operator">^</span> </span><br><span class="line">复合运算符：<span class="operator">+</span><span class="operator">=</span>、<span class="operator">-</span><span class="operator">=</span>、<span class="operator">/</span><span class="operator">=</span>、<span class="operator">%</span><span class="operator">=</span>、<span class="operator">*</span><span class="operator">=</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<h1 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h1><h2 id="if"><a href="#if" class="headerlink" title="if"></a>if</h2><p><strong>可以嵌条if</strong></p>
+<p>if exists(如果存在)</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if 条件</span><br><span class="line">	<span class="keyword">begin</span></span><br><span class="line">		<span class="comment">-----</span></span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	<span class="keyword">begin</span></span><br><span class="line">		<span class="comment">----</span></span><br><span class="line">	<span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="case"><a href="#case" class="headerlink" title="case"></a>case</h2><p><strong>可以嵌套</strong></p>
+<p><em><strong>相当于switch</strong></em></p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span></span><br><span class="line">	<span class="keyword">when</span> 条件 <span class="comment">---</span></span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> 条件</span><br><span class="line">	<span class="keyword">when</span> 判断 <span class="keyword">then</span> <span class="comment">---</span></span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><p><em><strong>while</strong></em></p>
+<p><strong>可以嵌套</strong></p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">declare</span> <span class="variable">@i</span> <span class="type">int</span> <span class="operator">=</span> <span class="number">1</span> <span class="comment">---循环变量</span></span><br><span class="line">while <span class="variable">@i</span><span class="operator">&lt;</span> <span class="operator">=</span> <span class="number">10</span> <span class="comment">---判断条件</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">	<span class="keyword">set</span> <span class="variable">@i</span> <span class="operator">=</span> <span class="variable">@i</span><span class="operator">+</span><span class="number">1</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h1><p>按照顺序自动排列</p>
+<p>ROW_NUMBER</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="built_in">ROW_NUMBER</span>() <span class="keyword">over</span>(<span class="keyword">order</span> <span class="keyword">by</span> 表的列名) 列名,<span class="operator">*</span> <span class="keyword">from</span> 表名</span><br></pre></td></tr></table></figure>
+
+<h1 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h1><p>防止上一条报错仍然执行下一条</p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">begin</span> transaction <span class="comment">--开始事务</span></span><br><span class="line"><span class="keyword">declare</span> <span class="variable">@myError</span> <span class="type">int</span> <span class="operator">=</span> <span class="number">0</span> <span class="comment">--定义错误的变量</span></span><br><span class="line">.........</span><br><span class="line"><span class="keyword">set</span> <span class="variable">@myError</span> <span class="operator">=</span> <span class="variable">@myError</span> <span class="operator">+</span> <span class="variable">@ERROR</span> <span class="comment">--累加错误</span></span><br><span class="line">........</span><br><span class="line"><span class="keyword">set</span> <span class="variable">@myError</span> <span class="operator">=</span> <span class="variable">@myError</span> <span class="operator">+</span> <span class="variable">@ERROR</span> <span class="comment">--累加错误</span></span><br><span class="line">if <span class="variable">@myError</span> <span class="operator">=</span> <span class="number">0</span> <span class="comment">--判断是否有错误</span></span><br><span class="line"> <span class="keyword">begin</span></span><br><span class="line"> 	<span class="keyword">commit</span> transaction <span class="comment">--提交事务</span></span><br><span class="line"> <span class="keyword">end</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"> <span class="keyword">begin</span></span><br><span class="line"> 	<span class="keyword">rollback</span> transaction <span class="comment">--回滚</span></span><br><span class="line"> <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><blockquote>
+<p>索引：提高检索查询效率。<br>SQL SERVER索引类型：按存储结构区分 :“聚集索引（又称聚类索引，簇集索引）”，“非聚集索引（非聚类索引，<br>非簇集索引)“;</p>
+<blockquote>
+<p>聚集索引：根据数据行的键值在表或视图中的排序存储这些数据行，每个表只有一个聚集索引。聚集索引是一种对<br>磁盘上实际数据重新组织以按指定的一列或多列值排序(类似字典中的拼音索引)(物理存储顺序)。</p>
+<p>非聚集索引：具有独立于数据行的结构，包含非聚集索引键值，且每个键值项都有指向包含该键值的数据行的指<br>针。（类似字典中的偏旁部首索引）（逻辑存储顺序）。</p>
+</blockquote>
+<p>SQL SERVER索引其他分类：<br>按数据唯一性区分：“唯一索引”“非唯一索引”；按键列个数区分 :“单列索引”,“多列索引”。<br>创建索引的方式：</p>
+<ol>
+<li><p>通过显式的CREATE INDEX命令</p>
+</li>
+<li><p>在创建约束时作为隐含的对象</p>
+</li>
+<li><p>主键约束(聚集索引)</p>
+</li>
+<li><p>唯一约(唯一索引)</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="创建索引语法"><a href="#创建索引语法" class="headerlink" title="创建索引语法"></a>创建索引语法</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] [CLUSTERED <span class="operator">|</span> NONCLUSTERED] INDEX <span class="operator">&lt;</span>index name<span class="operator">&gt;</span> <span class="keyword">ON</span> <span class="operator">&lt;</span><span class="keyword">table</span> <span class="keyword">or</span> <span class="keyword">view</span> name<span class="operator">&gt;</span>(<span class="operator">&lt;</span><span class="keyword">column</span> name<span class="operator">&gt;</span> [<span class="keyword">ASC</span><span class="operator">|</span><span class="keyword">DESC</span>][,...n])</span><br></pre></td></tr></table></figure>
+
+<h2 id="索引基本示例语法"><a href="#索引基本示例语法" class="headerlink" title="索引基本示例语法"></a>索引基本示例语法</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">unique</span> nonclustered index 索引名 <span class="keyword">on</span> 表名(列名) <span class="comment">--创建(unique是唯一的组件，可加可不加)</span></span><br><span class="line"><span class="keyword">drop</span> index 索引名 <span class="keyword">on</span> 表名</span><br></pre></td></tr></table></figure>
+
+<h2 id="查询-1"><a href="#查询-1" class="headerlink" title="查询"></a>查询</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> 表名 <span class="keyword">with</span>(index<span class="operator">=</span>索引名) <span class="keyword">where</span> 条件</span><br></pre></td></tr></table></figure>
+
+<h1 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h1><p>方便查询</p>
+<h2 id="创建-1"><a href="#创建-1" class="headerlink" title="创建"></a>创建</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">view</span> 视图名</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">..... <span class="comment">--查询内容</span></span><br><span class="line">go</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> 视图名</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h2><figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">view</span> 视图名</span><br></pre></td></tr></table></figure>
+
+<h1 id="游标"><a href="#游标" class="headerlink" title="游标"></a>游标</h1><blockquote>
+<p>游标：定位到结果集中某一行。<br>游标分类：<br>（1）静态游标(Static)：在操作游标的时候，数据发生变化，游标中数据不变<br>（2）动态游标(Dynamic)：在操作游标的时候，数据发生变化，游标中数据改变，默认值。<br>（3）键集驱动游标(KeySet)：在操作游标的时候，被标识的列发生改变，游标中数据改变，其他列改变，游标中数据不变。</p>
+</blockquote>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">declare</span> 游标名 <span class="keyword">cursor</span> <span class="keyword">scroll</span> <span class="keyword">for</span> <span class="keyword">select</span> 列名 <span class="keyword">from</span> 表名 <span class="comment">--创建游标(scroll：滚动游标，没有scrool，只进)</span></span><br><span class="line"><span class="keyword">open</span> 游标名 <span class="comment">--打开游标</span></span><br><span class="line"><span class="keyword">fetch</span> <span class="operator">&lt;</span><span class="keyword">first</span><span class="operator">|</span><span class="keyword">last</span><span class="operator">|</span>absolute<span class="operator">|</span>reative<span class="operator">|</span>next<span class="operator">|</span>prior<span class="operator">&gt;</span> <span class="keyword">from</span> 游标 <span class="comment">--提取某行数据</span></span><br><span class="line"><span class="keyword">fetch</span> <span class="operator">&lt;</span><span class="keyword">first</span><span class="operator">|</span><span class="keyword">last</span><span class="operator">|</span>absolute<span class="operator">|</span>reative<span class="operator">|</span>next<span class="operator">|</span>prior<span class="operator">&gt;</span> <span class="keyword">from</span> 游标 <span class="keyword">into</span> 插入内容 <span class="comment">--提取某行数据，插入</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>遍历游标</strong></p>
+<figure class="highlight sql"><figcaption><span>server</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fetch</span> absolute <span class="number">1</span> <span class="keyword">from</span> 游标名 <span class="keyword">into</span> 插入内容</span><br><span class="line"><span class="comment">--@@fetch_status 0:提取成功,-1:失败,-2:不存在</span></span><br><span class="line">while @<span class="variable">@fatch</span>_status <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">	<span class="keyword">begin</span> </span><br><span class="line">		<span class="keyword">fetch</span> next <span class="keyword">from</span> 游标名 <span class="keyword">into</span> 插入内容</span><br><span class="line">	<span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="函数-1"><a href="#函数-1" class="headerlink" title="函数"></a>函数</h1><blockquote>
+<p>函数分为</p>
+<p>（1）系统函数</p>
+<p>（2）自定义函数</p>
+<p>其中自定义函数又可以分为</p>
+<p>（1）标量值函数（返回单个值）</p>
+<p>（2）表值函数（返回查询结果）</p>
+</blockquote>
+<h2 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h2><h3 id="创建函数"><a href="#创建函数" class="headerlink" title="创建函数"></a>创建函数</h3><h4 id="标量值函数"><a href="#标量值函数" class="headerlink" title="标量值函数"></a>标量值函数</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">function</span> 函数名(@传递变量 类型) <span class="keyword">returns</span> 类型</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">	<span class="keyword">declare</span> @返回参数 类型</span><br><span class="line">	<span class="keyword">select</span> @返回参数 <span class="operator">=</span> (<span class="keyword">select</span> 列名 <span class="keyword">from</span> 表名 <span class="keyword">where</span> 条件 <span class="operator">=</span> @传递变量)</span><br><span class="line">	<span class="keyword">return</span> @返回参数</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="comment">--使用</span></span><br><span class="line"><span class="keyword">select</span> dbo.函数名(传递值)</span><br></pre></td></tr></table></figure>
+
+<h4 id="表值函数"><a href="#表值函数" class="headerlink" title="表值函数"></a>表值函数</h4><p><strong>方案一（逻辑复杂，函数内容除了返回结果的sql语句还有其他内容，例如定义变量等）：</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">function</span> GetExchangeByTime(<span class="variable">@StartTime</span> <span class="type">varchar</span>(<span class="number">30</span>),<span class="variable">@EndTime</span> <span class="type">varchar</span>(<span class="number">30</span>))</span><br><span class="line"><span class="keyword">returns</span> <span class="variable">@ExchangeTable</span> <span class="keyword">table</span></span><br><span class="line">(</span><br><span class="line">    RealName <span class="type">varchar</span>(<span class="number">30</span>),  <span class="comment">--真实姓名</span></span><br><span class="line">    CardNo <span class="type">varchar</span>(<span class="number">30</span>),    <span class="comment">--卡号</span></span><br><span class="line">    MoneyInBank money,     <span class="comment">--存钱金额</span></span><br><span class="line">    MoneyOutBank money,    <span class="comment">--取钱金额</span></span><br><span class="line">    ExchangeTime smalldatetime  <span class="comment">--交易时间</span></span><br><span class="line">)</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">insert</span> <span class="keyword">into</span> <span class="variable">@ExchangeTable</span></span><br><span class="line">    <span class="keyword">select</span> AccountInfo.RealName,CardExchange.CardNo,CardExchange.MoneyInBank,</span><br><span class="line">    CardExchange.MoneyOutBank,CardExchange.ExchangeTime <span class="keyword">from</span> CardExchange</span><br><span class="line">    <span class="keyword">left</span> <span class="keyword">join</span> BankCard <span class="keyword">on</span> CardExchange.CardNo <span class="operator">=</span> BankCard.CardNo</span><br><span class="line">    <span class="keyword">left</span> <span class="keyword">join</span> AccountInfo <span class="keyword">on</span> BankCard.AccountId <span class="operator">=</span> AccountInfo.AccountId</span><br><span class="line">    <span class="keyword">where</span> CardExchange.ExchangeTime <span class="keyword">between</span> <span class="variable">@StartTime</span><span class="operator">+</span><span class="string">&#x27; 00:00:00&#x27;</span> <span class="keyword">and</span> <span class="variable">@EndTime</span><span class="operator">+</span><span class="string">&#x27; 23:59:59&#x27;</span></span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="comment">--调用函数</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> GetExchangeByTime(<span class="string">&#x27;2018-6-1&#x27;</span>,<span class="string">&#x27;2018-7-1&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>方案二（逻辑简单，函数内容直接是一条sql查询语句）：</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">function</span> GetExchangeByTime(<span class="variable">@StartTime</span> <span class="type">varchar</span>(<span class="number">30</span>),<span class="variable">@EndTime</span> <span class="type">varchar</span>(<span class="number">30</span>))</span><br><span class="line"><span class="keyword">returns</span> <span class="keyword">table</span></span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">select</span> AccountInfo.RealName,CardExchange.CardNo,CardExchange.MoneyInBank,</span><br><span class="line">    CardExchange.MoneyOutBank,CardExchange.ExchangeTime <span class="keyword">from</span> CardExchange</span><br><span class="line">    <span class="keyword">left</span> <span class="keyword">join</span> BankCard <span class="keyword">on</span> CardExchange.CardNo <span class="operator">=</span> BankCard.CardNo</span><br><span class="line">    <span class="keyword">left</span> <span class="keyword">join</span> AccountInfo <span class="keyword">on</span> BankCard.AccountId <span class="operator">=</span> AccountInfo.AccountId</span><br><span class="line">    <span class="keyword">where</span> CardExchange.ExchangeTime <span class="keyword">between</span> <span class="variable">@StartTime</span><span class="operator">+</span><span class="string">&#x27; 00:00:00&#x27;</span> <span class="keyword">and</span> <span class="variable">@EndTime</span><span class="operator">+</span><span class="string">&#x27; 23:59:59&#x27;</span></span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="comment">--调用函数</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> GetExchangeByTime(<span class="string">&#x27;2018-6-19&#x27;</span>,<span class="string">&#x27;2018-6-19&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="触发器"><a href="#触发器" class="headerlink" title="触发器"></a>触发器</h1><blockquote>
+<p>触发器分类：</p>
+<p>（1） “Instead of”触发器</p>
+<p>（2）“After”触发器</p>
+<p>“Instead of”触发器：在执行操作之前被执行<br>“After”触发器：在执行操作之后被执行</p>
+</blockquote>
+<h2 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h2><h3 id="添加的触发器"><a href="#添加的触发器" class="headerlink" title="添加的触发器"></a>添加的触发器</h3><p>临时存放的添加数据在 <strong>inserted</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> 触发器名字 <span class="keyword">on</span> 表名 <span class="operator">&lt;</span>after<span class="operator">|</span>Instead <span class="keyword">of</span><span class="operator">&gt;</span> <span class="keyword">insert</span></span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">	触发的内容</span><br><span class="line">go</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> tri_InsertPeople <span class="keyword">on</span> People</span><br><span class="line">after <span class="keyword">insert</span></span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">if <span class="keyword">not</span> <span class="keyword">exists</span>(<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> Department <span class="keyword">where</span> DepartmentId <span class="operator">=</span> (<span class="keyword">select</span> DepartmentId <span class="keyword">from</span> inserted))</span><br><span class="line">    <span class="keyword">insert</span> <span class="keyword">into</span> Department(DepartmentId,DepartmentName)</span><br><span class="line">    <span class="keyword">values</span>((<span class="keyword">select</span> DepartmentId <span class="keyword">from</span> inserted),<span class="string">&#x27;新部门&#x27;</span>)</span><br><span class="line">go</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="删除的触发器"><a href="#删除的触发器" class="headerlink" title="删除的触发器"></a>删除的触发器</h3><p>临时存放的删除数据在 <strong>deleted</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> 触发器名字 <span class="keyword">on</span> 表名 <span class="operator">&lt;</span>after<span class="operator">|</span>Instead <span class="keyword">of</span><span class="operator">&gt;</span> <span class="keyword">delete</span></span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">	触发的内容</span><br><span class="line">go</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">trigger</span> tri_DeleteDept <span class="comment">--删除掉之前的触发器，因为当前触发器也叫这个名字</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> tri_DeleteDept <span class="keyword">on</span> Department</span><br><span class="line">Instead <span class="keyword">of</span> <span class="keyword">delete</span></span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">  if <span class="keyword">not</span> <span class="keyword">exists</span>(<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> People <span class="keyword">where</span> DepartmentId <span class="operator">=</span> (<span class="keyword">select</span> DepartmentId <span class="keyword">from</span> deleted))</span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">delete</span> <span class="keyword">from</span> Department <span class="keyword">where</span> DepartmentId <span class="operator">=</span> (<span class="keyword">select</span> DepartmentId <span class="keyword">from</span> deleted)</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">go</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="修改触发器"><a href="#修改触发器" class="headerlink" title="修改触发器"></a>修改触发器</h3><p><strong>修改数据是先删除在插入</strong></p>
+<p>临时存放的添加数据在 <strong>inserted</strong></p>
+<p>临时存放的删除数据在 <strong>deleted</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> 触发器名字 <span class="keyword">on</span> 表名 <span class="operator">&lt;</span>after<span class="operator">|</span>Instead <span class="keyword">of</span><span class="operator">&gt;</span> <span class="keyword">update</span></span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">	触发的内容</span><br><span class="line">go</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> tri_UpdateDept <span class="keyword">on</span> Department</span><br><span class="line">after <span class="keyword">update</span></span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    <span class="keyword">update</span> People <span class="keyword">set</span> DepartmentId <span class="operator">=</span> (<span class="keyword">select</span> DepartmentId <span class="keyword">from</span> inserted)</span><br><span class="line">    <span class="keyword">where</span> DepartmentId <span class="operator">=</span> (<span class="keyword">select</span> DepartmentId <span class="keyword">from</span> deleted)</span><br><span class="line">go</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="删除-2"><a href="#删除-2" class="headerlink" title="删除"></a>删除</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">trigger</span> 触发器名字</span><br></pre></td></tr></table></figure>
+
+<h1 id="存储过程"><a href="#存储过程" class="headerlink" title="存储过程"></a>存储过程</h1><h2 id="无输入参数的存储过程"><a href="#无输入参数的存储过程" class="headerlink" title="无输入参数的存储过程"></a>无输入参数的存储过程</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc 存储过程名字</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    查询内容</span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="keyword">exec</span> 存储过程名字 <span class="comment">--调用</span></span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc proc_MinMoneyCard</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    <span class="keyword">select</span> CardNo 银行卡号,RealName 姓名,CardMoney 余额</span><br><span class="line">    <span class="keyword">from</span> BankCard <span class="keyword">inner</span> <span class="keyword">join</span> AccountInfo <span class="keyword">on</span> BankCard.AccountId <span class="operator">=</span> AccountInfo.AccountId</span><br><span class="line">    <span class="keyword">where</span> CardMoney<span class="operator">=</span>(<span class="keyword">select</span> <span class="built_in">MIN</span>(CardMoney) <span class="keyword">from</span> BankCard)</span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="keyword">exec</span> proc_MinMoneyCard <span class="comment">--调用</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="有输入参数的存储过程"><a href="#有输入参数的存储过程" class="headerlink" title="有输入参数的存储过程"></a>有输入参数的存储过程</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc proc_CunQian @参数 类型</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    查询内容</span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="keyword">exec</span> 存储过程名字 <span class="comment">--调用</span></span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc proc_CunQian</span><br><span class="line"><span class="variable">@CardNo</span> <span class="type">varchar</span>(<span class="number">30</span>),</span><br><span class="line"><span class="variable">@MoneyInBank</span> money</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    <span class="keyword">update</span> BankCard <span class="keyword">set</span> CardMoney <span class="operator">=</span> CardMoney <span class="operator">+</span> <span class="variable">@MoneyInBank</span> <span class="keyword">where</span> CardNo <span class="operator">=</span> <span class="variable">@CardNo</span></span><br><span class="line">    <span class="keyword">insert</span> <span class="keyword">into</span> CardExchange(CardNo,MoneyInBank,MoneyOutBank,ExchangeTime)</span><br><span class="line">    <span class="keyword">values</span>(<span class="variable">@CardNo</span>,<span class="variable">@MoneyInBank</span>,<span class="number">0</span>,GETDATE())</span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="keyword">exec</span> proc_CunQian <span class="string">&#x27;6225125478544587&#x27;</span>,<span class="number">3000</span> <span class="comment">--调用 </span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="有输入参数，没有输出参数，但是有返回值的存储过程"><a href="#有输入参数，没有输出参数，但是有返回值的存储过程" class="headerlink" title="有输入参数，没有输出参数，但是有返回值的存储过程"></a>有输入参数，没有输出参数，但是有返回值的存储过程</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc proc_CunQian @参数 类型</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    查询内容</span><br><span class="line">    <span class="keyword">return</span> 返回值(必须为整数)</span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="comment">--调用</span></span><br><span class="line"><span class="keyword">declare</span> @存储的变量</span><br><span class="line"><span class="keyword">exec</span> @存储的变量 <span class="operator">=</span> 存储过程名字</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc proc_QuQian</span><br><span class="line"><span class="variable">@CardNo</span> <span class="type">varchar</span>(<span class="number">30</span>),</span><br><span class="line"><span class="variable">@MoneyOutBank</span> money</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    <span class="keyword">update</span> BankCard <span class="keyword">set</span> CardMoney <span class="operator">=</span> CardMoney <span class="operator">-</span> <span class="variable">@MoneyOutBank</span> <span class="keyword">where</span> CardNo <span class="operator">=</span> <span class="variable">@CardNo</span></span><br><span class="line">    if @<span class="variable">@ERROR</span> <span class="operator">&lt;&gt;</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">    <span class="keyword">insert</span> <span class="keyword">into</span> CardExchange(CardNo,MoneyInBank,MoneyOutBank,ExchangeTime)</span><br><span class="line">    <span class="keyword">values</span>(<span class="variable">@CardNo</span>,<span class="number">0</span>,<span class="variable">@MoneyOutBank</span>,GETDATE())</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="comment">--调用</span></span><br><span class="line"><span class="keyword">declare</span> <span class="variable">@returnValue</span> <span class="type">int</span></span><br><span class="line"><span class="keyword">exec</span> <span class="variable">@returnValue</span> <span class="operator">=</span> proc_QuQian <span class="string">&#x27;662018092100000002&#x27;</span>,<span class="number">1000000</span></span><br><span class="line">print <span class="variable">@returnValue</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="有输入参数，有输出参数的存储过程"><a href="#有输入参数，有输出参数的存储过程" class="headerlink" title="有输入参数，有输出参数的存储过程"></a>有输入参数，有输出参数的存储过程</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc proc_CunQian @参数 类型,@输出参数 类型 output</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    查询内容</span><br><span class="line">    <span class="keyword">select</span>@输出参数 <span class="operator">=</span> 查询内容</span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="comment">--调用</span></span><br><span class="line"><span class="keyword">declare</span> @存储的变量</span><br><span class="line"><span class="keyword">exec</span> 存储过程名字 @存储的变量 output</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc proc_SelectExchange</span><br><span class="line">    <span class="variable">@startTime</span> <span class="type">varchar</span>(<span class="number">20</span>),  <span class="comment">--开始时间</span></span><br><span class="line">    <span class="variable">@endTime</span> <span class="type">varchar</span>(<span class="number">20</span>),    <span class="comment">--结束时间</span></span><br><span class="line">    <span class="variable">@SumIn</span> money output,     <span class="comment">--存款总金额</span></span><br><span class="line">    <span class="variable">@SumOut</span> money output    <span class="comment">--取款总金额</span></span><br><span class="line"><span class="keyword">as</span></span><br><span class="line"><span class="keyword">select</span> <span class="variable">@SumIn</span> <span class="operator">=</span> (<span class="keyword">select</span> <span class="built_in">SUM</span>(MoneyInBank) <span class="keyword">from</span> CardExchange </span><br><span class="line">                <span class="keyword">where</span> ExchangeTime <span class="keyword">between</span> <span class="variable">@startTime</span><span class="operator">+</span><span class="string">&#x27; 00:00:00&#x27;</span> <span class="keyword">and</span> <span class="variable">@endTime</span><span class="operator">+</span><span class="string">&#x27; 23:59:59&#x27;</span>)</span><br><span class="line"><span class="keyword">select</span> <span class="variable">@SumOut</span> <span class="operator">=</span> (<span class="keyword">select</span> <span class="built_in">SUM</span>(MoneyOutBank) <span class="keyword">from</span> CardExchange </span><br><span class="line">                <span class="keyword">where</span> ExchangeTime <span class="keyword">between</span> <span class="variable">@startTime</span><span class="operator">+</span><span class="string">&#x27; 00:00:00&#x27;</span> <span class="keyword">and</span> <span class="variable">@endTime</span><span class="operator">+</span><span class="string">&#x27; 23:59:59&#x27;</span>)</span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> CardExchange </span><br><span class="line"><span class="keyword">where</span> ExchangeTime <span class="keyword">between</span> <span class="variable">@startTime</span><span class="operator">+</span><span class="string">&#x27; 00:00:00&#x27;</span> <span class="keyword">and</span> <span class="variable">@endTime</span><span class="operator">+</span><span class="string">&#x27; 23:59:59&#x27;</span></span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="comment">--调用</span></span><br><span class="line"><span class="keyword">declare</span> <span class="variable">@SumIn</span> money     <span class="comment">--存款总金额</span></span><br><span class="line"><span class="keyword">declare</span> <span class="variable">@SumOut</span> money   <span class="comment">--取款总金额</span></span><br><span class="line"><span class="keyword">exec</span> proc_SelectExchange <span class="string">&#x27;2018-1-1&#x27;</span>,<span class="string">&#x27;2018-12-31&#x27;</span>,<span class="variable">@SumIn</span> output,<span class="variable">@SumOut</span> output</span><br><span class="line"><span class="keyword">select</span> <span class="variable">@SumIn</span></span><br><span class="line"><span class="keyword">select</span> <span class="variable">@SumOut</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="具有同时输入输出参数的存储过程"><a href="#具有同时输入输出参数的存储过程" class="headerlink" title="具有同时输入输出参数的存储过程"></a>具有同时输入输出参数的存储过程</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> proc proc_CunQian @参数 类型,@输出参数 类型 output,@输出输入参数 类型 output</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    查询内容</span><br><span class="line">    <span class="keyword">select</span>@输出参数 <span class="operator">=</span> 查询内容</span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="comment">--调用</span></span><br><span class="line"><span class="keyword">declare</span> @存储的变量(输出参数)</span><br><span class="line"><span class="keyword">declare</span> @存储的变量(输出输入参数) <span class="operator">=</span> 输入参数</span><br><span class="line"><span class="keyword">exec</span> 存储过程名字 @存储的变量(输出参数) output,@存储的变量(输出输入参数) output</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--有输入输出参数（密码作为输入参数也作为输出参数）</span></span><br><span class="line"><span class="comment">--密码升级，传入用户名和密码，如果用户名密码正确，并且密码长度&lt;8，自动升级成8位密码</span></span><br><span class="line"><span class="keyword">select</span> <span class="built_in">FLOOR</span>(RAND()<span class="operator">*</span><span class="number">10</span>) <span class="comment">--0-9之间随机数</span></span><br><span class="line"><span class="keyword">create</span> proc procPwdUpgrade</span><br><span class="line"><span class="variable">@cardno</span> nvarchar(<span class="number">20</span>),</span><br><span class="line"><span class="variable">@pwd</span> nvarchar(<span class="number">20</span>) output</span><br><span class="line"><span class="keyword">as</span></span><br><span class="line">    if <span class="keyword">not</span> <span class="keyword">exists</span>(<span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> BankCard <span class="keyword">where</span> CardNo<span class="operator">=</span><span class="variable">@cardno</span> <span class="keyword">and</span> CardPwd<span class="operator">=</span><span class="variable">@pwd</span>)</span><br><span class="line">        <span class="keyword">set</span> <span class="variable">@pwd</span> <span class="operator">=</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        if len(<span class="variable">@pwd</span>) <span class="operator">&lt;</span> <span class="number">8</span></span><br><span class="line">        <span class="keyword">begin</span></span><br><span class="line">            <span class="keyword">declare</span> <span class="variable">@len</span> <span class="type">int</span> <span class="operator">=</span> <span class="number">8</span><span class="operator">-</span> len(<span class="variable">@pwd</span>)</span><br><span class="line">            <span class="keyword">declare</span> <span class="variable">@i</span> <span class="type">int</span> <span class="operator">=</span> <span class="number">1</span></span><br><span class="line">            while <span class="variable">@i</span> <span class="operator">&lt;=</span> <span class="variable">@len</span></span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">                </span><br><span class="line">                <span class="keyword">set</span> <span class="variable">@pwd</span> <span class="operator">=</span> <span class="variable">@pwd</span> <span class="operator">+</span> <span class="built_in">cast</span>(<span class="built_in">FLOOR</span>(RAND()<span class="operator">*</span><span class="number">10</span>) <span class="keyword">as</span> <span class="type">varchar</span>(<span class="number">1</span>))</span><br><span class="line">                <span class="keyword">set</span> <span class="variable">@i</span> <span class="operator">=</span> <span class="variable">@i</span><span class="operator">+</span><span class="number">1</span></span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">            <span class="keyword">update</span> BankCard <span class="keyword">set</span> CardPwd <span class="operator">=</span> <span class="variable">@pwd</span> <span class="keyword">where</span> CardNo<span class="operator">=</span><span class="variable">@cardno</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">go</span><br><span class="line"></span><br><span class="line"><span class="comment">--调用</span></span><br><span class="line"><span class="keyword">declare</span> <span class="variable">@pwd</span> nvarchar(<span class="number">20</span>) <span class="operator">=</span> <span class="string">&#x27;123456&#x27;</span></span><br><span class="line"><span class="keyword">exec</span> procPwdUpgrade <span class="string">&#x27;6225547854125656&#x27;</span>,<span class="variable">@pwd</span> output</span><br><span class="line"><span class="keyword">select</span> <span class="variable">@pwd</span></span><br></pre></td></tr></table></figure>
+
+
+      <div class="tags">
+          <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"><i class="ic i-tag"></i> 教程</a>
+          <a href="/tags/sql-server/" rel="tag"><i class="ic i-tag"></i> sql server</a>
+          <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"><i class="ic i-tag"></i> 笔记</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2021-11-28 22:17:25" itemprop="dateModified" datetime="2021-11-28T22:17:25+08:00">2021-11-28</time>
+  </span>
+  <span id="2021/11/28/sql server/" class="item leancloud_visitors" data-flag-title="sql server教程" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="空无 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="空无 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="空无 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>空无 <i class="ic i-at"><em>@</em></i>空无的博客
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.kongwu.top/2021/11/28/sql%20server/" title="sql server教程">https://blog.kongwu.top/2021/11/28/sql server/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2021/03/18/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx6phq6j20zk0m8e36.jpg" title="目前已知问题">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 已知问题</span>
+  <h3>目前已知问题</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <style>.utterances{max-width: 100%;}</style>
+  <script src="https://utteranc.es/client.js"
+          repo="shenchous/blog"
+          issue-term="title"
+          label="hexo"
+          theme="preferred-color-scheme"
+          crossorigin="anonymous"
+          async>
+  </script>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA"><span class="toc-number">1.</span> <span class="toc-text">创建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.1.</span> <span class="toc-text">创建数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E8%A1%A8"><span class="toc-number">1.1.1.</span> <span class="toc-text">创建表</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%92%E5%85%A5"><span class="toc-number">2.</span> <span class="toc-text">插入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9"><span class="toc-number">3.</span> <span class="toc-text">修改</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%BA%A6%E6%9D%9F"><span class="toc-number">3.1.</span> <span class="toc-text">添加约束</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-number">4.</span> <span class="toc-text">删除</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2"><span class="toc-number">5.</span> <span class="toc-text">查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6"><span class="toc-number">5.1.</span> <span class="toc-text">条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%88%97%E8%A1%A8"><span class="toc-number">5.2.</span> <span class="toc-text">添加列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2"><span class="toc-number">5.3.</span> <span class="toc-text">分组查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-number">5.4.</span> <span class="toc-text">多表查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-number">5.4.1.</span> <span class="toc-text">简单多表查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E8%BF%9E%E6%8E%A5"><span class="toc-number">5.4.2.</span> <span class="toc-text">内连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%96%E8%BF%9E%E6%8E%A5"><span class="toc-number">5.4.3.</span> <span class="toc-text">外连接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A6%E5%A4%96%E8%BF%9E"><span class="toc-number">5.4.3.1.</span> <span class="toc-text">左外连</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%B3%E5%A4%96%E8%BF%9E"><span class="toc-number">5.4.3.2.</span> <span class="toc-text">右外连</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E5%A4%96%E8%BF%9E"><span class="toc-number">5.4.3.3.</span> <span class="toc-text">全外连</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E8%BF%9E%E6%8E%A5"><span class="toc-number">5.4.3.4.</span> <span class="toc-text">自连接</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%90%E6%9F%A5%E8%AF%A2"><span class="toc-number">5.5.</span> <span class="toc-text">子查询</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">6.</span> <span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F"><span class="toc-number">6.1.</span> <span class="toc-text">定义变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%8B%E5%80%BC"><span class="toc-number">6.2.</span> <span class="toc-text">赋值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="toc-number">6.3.</span> <span class="toc-text">全局变量</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">7.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0"><span class="toc-number">7.0.1.</span> <span class="toc-text">聚合函数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#go%E8%AF%AD%E5%8F%A5"><span class="toc-number">8.</span> <span class="toc-text">go语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">9.</span> <span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD"><span class="toc-number">10.</span> <span class="toc-text">判断</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#if"><span class="toc-number">10.1.</span> <span class="toc-text">if</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#case"><span class="toc-number">10.2.</span> <span class="toc-text">case</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF"><span class="toc-number">11.</span> <span class="toc-text">循环</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E9%A1%B5"><span class="toc-number">12.</span> <span class="toc-text">分页</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-number">13.</span> <span class="toc-text">事务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95"><span class="toc-number">14.</span> <span class="toc-text">索引</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%B4%A2%E5%BC%95%E8%AF%AD%E6%B3%95"><span class="toc-number">14.1.</span> <span class="toc-text">创建索引语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E5%9F%BA%E6%9C%AC%E7%A4%BA%E4%BE%8B%E8%AF%AD%E6%B3%95"><span class="toc-number">14.2.</span> <span class="toc-text">索引基本示例语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2-1"><span class="toc-number">14.3.</span> <span class="toc-text">查询</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE"><span class="toc-number">15.</span> <span class="toc-text">视图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA-1"><span class="toc-number">15.1.</span> <span class="toc-text">创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">15.2.</span> <span class="toc-text">使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4-1"><span class="toc-number">15.3.</span> <span class="toc-text">删除</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%B8%E6%A0%87"><span class="toc-number">16.</span> <span class="toc-text">游标</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0-1"><span class="toc-number">17.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0"><span class="toc-number">17.1.</span> <span class="toc-text">自定义函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%87%BD%E6%95%B0"><span class="toc-number">17.1.1.</span> <span class="toc-text">创建函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E9%87%8F%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-number">17.1.1.1.</span> <span class="toc-text">标量值函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E5%80%BC%E5%87%BD%E6%95%B0"><span class="toc-number">17.1.1.2.</span> <span class="toc-text">表值函数</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">18.</span> <span class="toc-text">触发器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0"><span class="toc-number">18.1.</span> <span class="toc-text">添加</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%9A%84%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">18.1.1.</span> <span class="toc-text">添加的触发器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%9A%84%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">18.1.2.</span> <span class="toc-text">删除的触发器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="toc-number">18.1.3.</span> <span class="toc-text">修改触发器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4-2"><span class="toc-number">18.2.</span> <span class="toc-text">删除</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">19.</span> <span class="toc-text">存储过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E8%BE%93%E5%85%A5%E5%8F%82%E6%95%B0%E7%9A%84%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">19.1.</span> <span class="toc-text">无输入参数的存储过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E8%BE%93%E5%85%A5%E5%8F%82%E6%95%B0%E7%9A%84%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">19.2.</span> <span class="toc-text">有输入参数的存储过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E8%BE%93%E5%85%A5%E5%8F%82%E6%95%B0%EF%BC%8C%E6%B2%A1%E6%9C%89%E8%BE%93%E5%87%BA%E5%8F%82%E6%95%B0%EF%BC%8C%E4%BD%86%E6%98%AF%E6%9C%89%E8%BF%94%E5%9B%9E%E5%80%BC%E7%9A%84%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">19.3.</span> <span class="toc-text">有输入参数，没有输出参数，但是有返回值的存储过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E8%BE%93%E5%85%A5%E5%8F%82%E6%95%B0%EF%BC%8C%E6%9C%89%E8%BE%93%E5%87%BA%E5%8F%82%E6%95%B0%E7%9A%84%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">19.4.</span> <span class="toc-text">有输入参数，有输出参数的存储过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B7%E6%9C%89%E5%90%8C%E6%97%B6%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E5%8F%82%E6%95%B0%E7%9A%84%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">19.5.</span> <span class="toc-text">具有同时输入输出参数的存储过程</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2020/02/20/%E5%88%A9%E7%94%A8hexo%E5%92%8Cgitee%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/" rel="bookmark" title="利用hexo和gitee快速搭建免费博客">利用hexo和gitee快速搭建免费博客</a></li><li><a href="/2020/04/17/%E5%A4%8D%E6%B4%BBPanDownload/" rel="bookmark" title="复活PanDownload">复活PanDownload</a></li><li class="active"><a href="/2021/11/28/sql%20server/" rel="bookmark" title="sql server教程">sql server教程</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="空无"
+      data-src="/images/avatar.webp">
+  <p class="name" itemprop="name">空无</p>
+  <div class="description" itemprop="description">一个连搜索引擎都没有收录博客</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">4</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">4</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">9</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NoZW5jaG91cw==" title="https:&#x2F;&#x2F;github.com&#x2F;shenchous"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQ2OTE5Mjg2NA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;469192864"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item E-Mail" data-url="bWFpbHRvOm1haWxAa29uZ3d1LnRvcA==" title="mailto:mail@kongwu.top"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/ziyuan-open/" rel="section"><i class="ic i-home"></i>资源</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/photo-open/" rel="section"><i class="ic i-home"></i>照片</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%99%E7%A8%8B/" title="分类于 教程">教程</a>
+</div>
+
+    <span><a href="/2020/02/20/%E5%88%A9%E7%94%A8hexo%E5%92%8Cgitee%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/" title="利用hexo和gitee快速搭建免费博客">利用hexo和gitee快速搭建免费博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" title="分类于 更新日志">更新日志</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/bug/" title="分类于 bug">bug</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/bug/%E5%B7%B2%E7%9F%A5%E9%97%AE%E9%A2%98/" title="分类于 已知问题">已知问题</a>
+</div>
+
+    <span><a href="/2021/03/18/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" title="目前已知问题">目前已知问题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%99%E7%A8%8B/" title="分类于 教程">教程</a>
+</div>
+
+    <span><a href="/2020/04/17/%E5%A4%8D%E6%B4%BBPanDownload/" title="复活PanDownload">复活PanDownload</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%99%E7%A8%8B/" title="分类于 教程">教程</a>
+</div>
+
+    <span><a href="/2021/11/28/sql%20server/" title="sql server教程">sql server教程</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">空无 @ 空无的博客</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2021/11/28/sql server/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
